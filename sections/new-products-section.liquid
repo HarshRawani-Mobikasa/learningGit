@@ -1,0 +1,105 @@
+{{ 'new-products-section.css' | asset_url | stylesheet_tag }}
+
+
+<script src="{{ 'new-products-section.js' | asset_url }}" defer="defer"></script>
+
+ <section class="newProducts">
+      <div class="container pt-5">
+        <div class="categories-text mb-5">
+          <span >{{ section.settings.span }}
+          </span>
+          <h1 class="text-opacity">{{ section.settings.h1 }}</h1>
+              </div>
+        <div class="newProducts-button d-flex justify-content-center p">
+    {% for block in section.blocks %}
+    <button>{{ block.settings.upper_buttons_text }}</button>
+        
+          {% endfor %}
+        </div>
+        <div class="newProduct-slider">
+          {% for product in collections[section.settings.new_products].products %}
+          <div class="newProduct-1  ms-3 mt-5">
+            <div><img src="{{ product.featured_image |img_url:''}}" alt="" class="img-fluid" /></div>
+            <div class="newProduct-1-text pt-3">
+              <h6 class="m-0">
+               <a href="{{ product.url }}">  {{  product.title}} </a>
+                
+              </h6>
+              <h5>{{ product.price | money_without_trailing_zeros }}</h5>
+            </div>
+          </div>
+
+         
+  
+  {% endfor %}
+        
+          
+        </div>
+        <div class="bttn mt-5">
+         <a href="{{ section.settings.view_all_link }}" ><button>{{ section.settings.view_all_text }}</button></a>
+        </div>
+      </div>
+    </section>
+
+
+{% schema %}
+  {
+    "name": "new products",
+    "settings": [
+       {
+        "type":"collection",
+        "id":"new_products",
+        "label":"Best Seller"
+      }, 
+      
+      {
+        "type":"text",
+        "id":"span",
+        "label":"behind_text"
+      },
+      {
+        "type":"text",
+        "id":"h1",
+        "label":"above_text"
+      },
+      {
+        "type":"url",
+        "id":"view_all_link",
+        "label":"link here your collection"
+      },
+      {
+        "type":"text",
+        "id":"view_all_text",
+        "label":"view all"
+        
+      }
+    ],
+    "name":"new-products-button",
+    "blocks":[
+      {
+        "type":"text",
+        "name":"products",
+        "settings":[
+          {
+            "type":"text",
+            "id":"upper_buttons_text",
+            "label":"write your button text"
+          }
+        ]
+        
+      }
+    ],
+    "presets":[
+      {
+        "name":"new products",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

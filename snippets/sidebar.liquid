@@ -1,0 +1,17 @@
+<div class="sidebar-section">
+{% for block in section.blocks %}
+  {% assign item = block.settings %}
+  {% if block.type == "image" %}
+  <div class="mb-4">  
+  <h1>{{ item.title }}</h1>
+    <a href="{{ item.url }}"><img src="{{ item.img | img_url: 'master' }}" ></a>
+  </div>
+  {% else %}
+      <div class="mb-4">
+        <h1>{{ item.title2 }}</h1>
+        <p>{{ item.description }}</p>
+      </div>
+  
+  {% endif %}
+{% endfor %}
+</div>

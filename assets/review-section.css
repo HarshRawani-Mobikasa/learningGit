@@ -1,0 +1,47 @@
+           .review-1{
+                background: #F8F4F0;
+                border-radius: 6px;
+            }
+
+        .review-1 h1{
+            font-family: 'MrsEavesJustLig';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 169px;
+            line-height: 128px;
+            text-align: center;
+            color: #B39D81;
+            opacity: 0.6;
+        }
+        .review-1 p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #3C3C3C;
+        }
+        .viewer-img img{
+            border-radius: 50px;
+        }
+        .viewer-img{
+            position: relative;
+        }
+        .viewer-img::before{
+            content: '';
+            border-bottom: 1px solid #B39D81;
+            width: 80px;
+            position: absolute;
+            top: -30%;
+            left: 37%;
+        }
+
+
+@media (max-width:768px) {
+
+      .slick-slide img {
+            display: inline;
+        }
+}
+ 

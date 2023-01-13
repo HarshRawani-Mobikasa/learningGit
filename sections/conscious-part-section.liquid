@@ -1,0 +1,37 @@
+{{ 'conscious-part-section.css' | asset_url | stylesheet_tag }}
+
+
+   <section class="consciuos-part">
+    <div class="container-fluid m-0 p-0">
+      <div class="conscious-living text-center py-3">
+        <h1>{{ section.settings.h1 }}</h1>
+      </div>
+    </div>
+   </section>
+
+
+{% schema %}
+  {
+    "name": "conscious part",
+    "settings": [
+      {
+        "type":"text",
+        "id":"h1",
+        "label":"add your text here",
+        "default":"A way to Conscious Living"
+      }
+    ],
+    "presets":[
+      {
+        "name":"conscious part",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

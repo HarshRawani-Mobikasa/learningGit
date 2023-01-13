@@ -1,0 +1,70 @@
+
+
+.shopByTags{
+       background-color:#F8F4F0 ;
+       position: relative;
+    }
+.shopByTags-text{
+    text-align: center;
+}
+
+.shopByTags::after{
+    content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Group.svg?v=1669614785');
+    position: absolute;
+    top: -14%;
+    right: 0%;
+
+}
+
+
+.shopByTags-text span{
+    font-family: 'Smith Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 65px;
+    color: #9C4A2F;
+    opacity: 0.1;
+   
+}
+.shopByTags-text{
+    position: relative;
+}
+.shopByTags-text h1{
+    font-family: 'Garamond Premier Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #3C3C3C;
+
+}
+
+
+
+.tags-img{
+    position: relative;
+    z-index: 2;
+}
+.tags-img-1{
+   width: 20%;
+}
+
+.tags-img-1 img{
+    border: 1px solid #A1978D;
+    border-radius: 50%;
+    padding: 3%;
+    height: 65px;
+    width: 65px;
+   
+     
+    
+}
+.tags-img-1 img:hover{
+  
+    border: 1px solid #9C4A2F;
+}

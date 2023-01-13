@@ -1,0 +1,22 @@
+    .aboutAmala-p p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            color: #A1978D;
+             
+    }
+
+@media (max-width:768px) {
+        .aboutAmala-p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 16px;
+            text-align: center;
+            color: #A1978D;
+        }
+}

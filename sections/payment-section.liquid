@@ -1,0 +1,123 @@
+{{ 'payment-section.css' | asset_url | stylesheet_tag }}
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+
+
+
+<script src="{{ 'jquery.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'payment-section.js' | asset_url }}" defer="defer"></script>
+
+
+    <section class="payment-section">
+      <div class="container px-5 pt-3">
+        <div class="payment row ">
+          <div class="secure-payments col d-flex">
+            <div><img src="{{ section.settings.payments-img-1 |img_url:''}}" /></div>
+            <div class="mt-2 ms-1"><h6>{{ section.settings.payments-h6-1 }} <span class="f-w-light">{{ section.settings.payments-span-1 }}</span></h6></div>
+          </div>
+          <div class="secure-payments col d-flex">
+            <div><img src="{{ section.settings.payments-img-2 |img_url:''}}" /></div>
+            <div class="mt-2 ms-1"><h6>{{ section.settings.payments-h6-2 }} <span class="f-w-light">{{ section.settings.payments-span-2 }}</span></h6></div>
+          </div>
+          <div class="secure-payments col d-flex">
+            <div><img src="{{ section.settings.payments-img-3 |img_url:''}}" /></div>
+            <div class="mt-2 ms-1"><h6>{{ section.settings.payments-h6-3 }} <span class="f-w-light">{{ section.settings.payments-span-3 }}</span></h6></div>
+          </div>
+          <div class="secure-payments col d-flex">
+            <div><img src="{{ section.settings.payments-img-4 |img_url:''}}" /></div>
+            <div class="mt-2 ms-1"><h6>{{ section.settings.payments-h6-4 }} <span class="f-w-light">{{ section.settings.payments-span-4 }}</span></h6></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "payment-section",
+    "settings": [
+       {
+           "type":"image_picker",
+          "id":"payments-img-1",
+          "label":"choose your categories image"
+          },
+          {
+            "type":"text",
+            "id":"payments-h6-1",
+            "label":"category-title"
+          },
+
+              {
+            "type":"text",
+            "id":"payments-span-1",
+            "label":"category-amount"
+          },
+       {
+           "type":"image_picker",
+          "id":"payments-img-2",
+          "label":"choose your categories image"
+          },
+          {
+            "type":"text",
+            "id":"payments-h6-2",
+            "label":"category-title"
+          },
+
+              {
+            "type":"text",
+            "id":"payments-span-2",
+            "label":"category-amount"
+          },
+       {
+           "type":"image_picker",
+          "id":"payments-img-3",
+          "label":"choose your categories image"
+          },
+          {
+            "type":"text",
+            "id":"payments-h6-3",
+            "label":"category-title"
+          },
+
+              {
+            "type":"text",
+            "id":"payments-span-3",
+            "label":"category-amount"
+          },
+       {
+           "type":"image_picker",
+          "id":"payments-img-4",
+          "label":"choose your categories image"
+          },
+          {
+            "type":"text",
+            "id":"payments-h6-4",
+            "label":"category-title"
+          },
+
+              {
+            "type":"text",
+            "id":"payments-span-4",
+            "label":"category-amount"
+          }
+    ]
+    ,
+    "presets":[
+      {
+        "name":"payment-section",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

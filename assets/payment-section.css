@@ -1,0 +1,56 @@
+
+
+
+.payment{
+        /* padding: 20px 40px; */
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .f-w-light{
+        font-weight:300;
+    }
+    .payment h6{
+        display: inline;
+       font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+
+
+
+
+        @media (max-width:1440px) {
+          
+            .secure-payments h6{
+               
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 18px;
+                text-transform:capitalize;
+            }
+            
+        }
+
+
+
+@media (max-width:1024px) {
+
+    .secure-payments h6{
+               
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 7px;
+        line-height: 18px;
+    }
+
+    
+}

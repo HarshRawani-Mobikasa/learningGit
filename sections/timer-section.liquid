@@ -1,0 +1,77 @@
+{{ 'base.css' | asset_url | stylesheet_tag }}
+{{ 'timer.section.css' | asset_url | stylesheet_tag }}
+
+
+   <section class="d-md-block d-none">
+      <div class="container-fluid m-0 p-0">
+        <div class="timer">
+          <div class="text">
+             {{ section.settings.timer-text-1 }} <span>{{ section.settings.span-1 }}</span> {{ section.settings.timer-text-2 }} <span> {{ section.settings.span-2 }} </span> {{ section.settings.timer-text-3 }}
+            <span> {{ section.settings.span-3 }} </span> {{ section.settings.timer-text-4 }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+{% schema %}
+  {
+    "name": "timer",
+    "settings": [
+      {
+        "type":"text",
+        "id":"timer-text-1",
+        "label":"change your timer-text"
+      },
+      {
+        "type":"number",
+        "id":"span-1",
+        "label":"time"
+        
+      },
+            {
+        "type":"text",
+        "id":"timer-text-2",
+        "label":"change your timer-text"
+      },
+      {
+        "type":"number",
+        "id":"span-2",
+        "label":"time"
+        
+      },
+         {
+        "type":"text",
+        "id":"timer-text-3",
+        "label":"change your timer-text"
+      },
+      {
+        "type":"number",
+        "id":"span-3",
+        "label":"time"
+        
+      },
+         {
+        "type":"text",
+        "id":"timer-text-4",
+        "label":"change your timer-text"
+      }
+      
+    ],
+ 
+    "presets":[
+      {
+        "name":"timer-section",
+        "category":"text"
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

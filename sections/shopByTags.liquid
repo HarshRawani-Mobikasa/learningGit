@@ -1,0 +1,44 @@
+{{ 'shopByTags.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'shopByTags.js' | asset_url }}" defer="defer"></script>
+
+    <section class="shopByTags ">
+      <div class="container py-5 shopByTags-after">
+        <div class="categories-text">
+          <span > Shop By Tags
+          </span>
+          <h1 class="text-opacity"> Shop By Tags</h1>
+        </div>
+        <div class="tags-img px-5 ms-5 pb-5">
+          <div class="d-flex flex-wrap justify-content-between gx-0 pt-5 tags-img-row-1">
+            <div class=" tags-img-1 "><img src="./images/Layer_2.svg" alt="tag"></div>
+            <div class=" tags-img-1"><img src="./images/Frame (9).svg" alt="tag"></div>
+            <div class=" tags-img-1 "><img src="./images/Frame (1).svg" alt="tag"></div>
+            <div class=" tags-img-1"><img src="./images/Frame (8).svg" alt="tag"></div>
+            <div class=" tags-img-1"><img src="./images/Group 18.svg" alt="tag"></div>    
+            <div class=" tags-img-1 mt-md-5 "><img src="./images/Group 19.svg" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5 "><img src="./images/Frame (3).svg" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5"><img src="./images/Frame (7).svg" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5"><img src="./images/Frame (5).svg" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5 "><img src="./images/Group 62.svg" alt="tag"></div>
+          </div>
+        </div>
+        <div class="bttn">
+          <button>View All</button>
+        </div>
+      </div>
+    </section>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

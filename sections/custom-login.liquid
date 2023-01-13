@@ -1,0 +1,106 @@
+ 
+
+ 
+
+
+{% comment %}
+<section id="notification">
+    <div class="container">
+      <div class="row" data-aos="zoom-in">
+          <div class="col-lg-12 col-md-4 col-6 d-flex align-items-center justify-content-center notification-container">
+            
+            <div class="signIn">
+                {% form 'customer_login' %}
+                    {% comment %}{{ form.errors | default_errors }} {% endcomment %}
+                  {% include 'form-error', form: form %}
+                    
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" name="customer[email]" >
+            
+                  <label for="password">Password</label>
+                  <input type="password" name="customer[password]" >
+              
+                  <input type="submit" value="Sign in">
+                {% endform %}
+              
+            </div>
+             
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% schema %}
+   {
+      "name": "Custom Login section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+         
+          
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Custom Login section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+ <style>
+ 
+.signIn input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .signIn input  {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .signIn input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signIn input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+  
+  
+</style>
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+{% endcomment %}

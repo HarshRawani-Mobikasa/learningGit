@@ -1,0 +1,60 @@
+          <section id="shop-by-brand">
+                <div class="container-fluid">
+                  <div class="section-title">
+                    <h2>Shop By Tags</h2>
+                  </div>
+                   <div class="IpadScroll">
+                  <ul>
+                    {% for block in section.blocks %}
+                    <li><img src="{{ block.settings.sbb_img | img_url:'medium' }}"><span><img src="{{ block.settings.sbbThumb_img | img_url:'medium' }}"></span></li>
+                    {% endfor %}
+                  </ul>
+                  <div class="viewAllBtn">
+                    <button>view all</button>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+{% schema %}
+  {
+      "name": "Shop by Brand Section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+          {
+            "type": "image_picker",
+            "id": "sbb_img",
+            "label": "Shop By Brand Image"
+          },
+            {
+            "type": "image_picker",
+            "id": "sbbThumb_img",
+            "label": "Shop By Brand Thumbnail"
+          } 
+     
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Shop by Brand Section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

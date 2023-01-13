@@ -1,0 +1,576 @@
+{
+  "sections": {
+    "rich_text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let's have a look on Products",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>We have best quality rather than best quantity<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Products Collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "93b228da-842f-48ea-b4c8-18654de37883": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Recommended T-Shirts",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "half-sleeve-t-shirt",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "accent-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fd30f39a-a716-4260-bdc1-34eb51551039": {
+      "type": "amala-header",
+      "disabled": true,
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Group_1_1.png"
+      }
+    },
+    "d646841e-d261-4f61-b2ad-7d6afb1fb81e": {
+      "type": "timer-section",
+      "settings": {
+        "timer-text-1": "Super Sale Ends in",
+        "span-1": 4,
+        "timer-text-2": "hrs",
+        "span-2": 5,
+        "timer-text-3": "mins",
+        "span-3": 5,
+        "timer-text-4": "secs"
+      }
+    },
+    "8845f2fc-0cf3-4648-b77c-d33a1cbbfe5f": {
+      "type": "Slider",
+      "blocks": {
+        "9b6e8abc-f6e9-4e91-84e1-bbc0d4956efe": {
+          "type": "slide",
+          "settings": {
+            "slider-text-h5": "don't hesitate",
+            "slider-text-h5-2": "it's organic",
+            "slider-text-p": "drink sustainable | shop sustainable",
+            "slider-img": "shopify:\/\/shop_images\/main_banner_copy1_2_0ea7d9b8-33f4-4e04-95d0-1ae0789d6eb4.png"
+          }
+        },
+        "5500121b-d316-457f-95a4-5351395cb381": {
+          "type": "slide",
+          "settings": {
+            "slider-text-h5": "don't hesitate",
+            "slider-text-h5-2": "it's organic",
+            "slider-text-p": "drink sustainable | shop sustainable",
+            "slider-img": "shopify:\/\/shop_images\/main_banner_copy1_2_0ea7d9b8-33f4-4e04-95d0-1ae0789d6eb4.png"
+          }
+        }
+      },
+      "block_order": [
+        "9b6e8abc-f6e9-4e91-84e1-bbc0d4956efe",
+        "5500121b-d316-457f-95a4-5351395cb381"
+      ],
+      "settings": {}
+    },
+    "97a8f6a3-f11e-4b46-bfd7-240270c190f0": {
+      "type": "payment-section",
+      "settings": {
+        "payments-img-1": "shopify:\/\/shop_images\/Truck_d2c557c3-839a-434d-a689-437c76472e93.png",
+        "payments-h6-1": "free delivery",
+        "payments-span-1": "across india",
+        "payments-img-2": "shopify:\/\/shop_images\/Swap_ba16acc0-c1f7-4b2f-91a5-2516622e4c82.png",
+        "payments-h6-2": "easy",
+        "payments-span-2": "replacement",
+        "payments-img-3": "shopify:\/\/shop_images\/CreditCard_8f5f417e-1f68-4a51-8006-cfc9f3641bc8.png",
+        "payments-h6-3": "secure",
+        "payments-span-3": "payments",
+        "payments-img-4": "shopify:\/\/shop_images\/FaceMask_03e8bac2-7844-4083-9479-e893114a77c4.png",
+        "payments-h6-4": "strict covid",
+        "payments-span-4": "safety measures"
+      }
+    },
+    "493e985f-6da8-4f45-8ffb-b1b4ea228935": {
+      "type": "shop-categories",
+      "settings": {
+        "shop_by_categories": "shop-by-categories"
+      }
+    },
+    "6d4ffa46-4892-406a-b0fd-c28c83ad2905": {
+      "type": "best-seller-section",
+      "settings": {
+        "best_seller": "best-seller",
+        "text_span": "bestseller products",
+        "text_h1": "bestseller products",
+        "view_all_link": "shopify:\/\/collections\/shop-by-tags",
+        "view_all_text": "view all"
+      }
+    },
+    "069bb4a4-c955-4c2e-8fab-7399a0c469d4": {
+      "type": "shop-by-tags-section",
+      "settings": {
+        "text_span": "shop by tags",
+        "text_h1": "shop by tags",
+        "view_all_link": "",
+        "view_all_text": "view all"
+      }
+    },
+    "9e4cc4bb-8e72-4026-bcfa-bc2ed6d25678": {
+      "type": "recommendation-section",
+      "settings": {
+        "recommendation_img": "shopify:\/\/shop_images\/Group_75_e92190fe-c931-4a62-b985-27803726d665.png"
+      }
+    },
+    "6b0012f0-377c-480b-aa3f-b66a13ec07b1": {
+      "type": "shop-by-brands-section",
+      "settings": {
+        "text_span": "shop by brands",
+        "text_h1": "shop by brands",
+        "img-11": "shopify:\/\/shop_images\/image_26_dee41d66-5e7d-4e7f-acfd-21437cdd6257.png",
+        "img-22": "shopify:\/\/shop_images\/image_27_c97b31ff-f088-4cc4-aa67-e1d4fda2498f.png",
+        "img-33": "shopify:\/\/shop_images\/image_28_dfb115c6-9258-4334-b14e-e144b1c73c6b.png",
+        "img-44": "shopify:\/\/shop_images\/image_30_6c30d2ab-b5ae-4dca-8f4b-51cc6ec455cd.png",
+        "img-55": "shopify:\/\/shop_images\/image_37_cb27f3f5-1589-4b95-b9ca-2949698367b3.png",
+        "view_all_link": "#",
+        "view_all_text": "view all"
+      }
+    },
+    "a6c9e0b7-a175-4c98-a0c1-b47a846981e1": {
+      "type": "grid-section",
+      "blocks": {
+        "056af589-10d3-4bb3-a342-c14eb3b0aaf1": {
+          "type": "text",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Rectangle_71.png",
+            "text_span": "mindful eating",
+            "text_2_span": "mindful eating",
+            "text_2_h5": "clean and healthy living",
+            "image2": "shopify:\/\/shop_images\/Rectangle_66_1deb87cb-0fcb-426f-afdf-0ccbc0d0c193.png",
+            "text_span_2": "ethical beauty",
+            "text_2_span_2": "ethical beauty",
+            "text_2_h5_2": "clean and healthy living",
+            "image3": "shopify:\/\/shop_images\/image_58_e442eb02-9c53-4753-8a2a-142740c32506.png",
+            "text_span_3": "joyful home",
+            "text_2_span_3": "joyful home",
+            "text_2_h5_3": "clean and healthy living"
+          }
+        },
+        "e0117e9c-131a-4039-8e21-89bd11e159f2": {
+          "type": "text",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Rectangle_67_90cc0a7e-2af0-4e0c-bffb-eb315a445a9a.png",
+            "text_span": "purposeful gifts",
+            "text_2_span": "purposeful gifts",
+            "text_2_h5": "clear and healthy living",
+            "image2": "shopify:\/\/shop_images\/Rectangle_68_f6718e76-70bf-4487-8b87-8d2a06672d1b.png",
+            "text_span_2": "feel-good others",
+            "text_2_span_2": "feel-good others",
+            "text_2_h5_2": "clear and healthy living",
+            "image3": "shopify:\/\/shop_images\/image_59_13cd6813-a394-4287-b3e2-db1ff8103240.png",
+            "text_span_3": "responsible fashion",
+            "text_2_span_3": "responsible fashion",
+            "text_2_h5_3": "clear and healthy living"
+          }
+        }
+      },
+      "block_order": [
+        "056af589-10d3-4bb3-a342-c14eb3b0aaf1",
+        "e0117e9c-131a-4039-8e21-89bd11e159f2"
+      ],
+      "settings": {}
+    },
+    "e472ff8f-2ee1-4fe1-9079-4b60fdd821e3": {
+      "type": "new-products-section",
+      "blocks": {
+        "9ecb686b-b644-4c6b-b591-249126a852aa": {
+          "type": "text",
+          "settings": {
+            "upper_buttons_text": "all"
+          }
+        },
+        "1ef7de04-bb3f-41c5-a9c5-a71eaae8ca43": {
+          "type": "text",
+          "settings": {
+            "upper_buttons_text": "fashion"
+          }
+        },
+        "246f5f69-ade0-46a8-8137-44e39dd7997d": {
+          "type": "text",
+          "settings": {
+            "upper_buttons_text": "skin"
+          }
+        },
+        "d98121a8-5feb-4288-867b-22c207468962": {
+          "type": "text",
+          "settings": {
+            "upper_buttons_text": "home"
+          }
+        },
+        "59257ee5-0f25-4ace-81e9-8b24e3f67567": {
+          "type": "text",
+          "settings": {
+            "upper_buttons_text": "beauty"
+          }
+        },
+        "21edc227-bf35-40eb-a55c-c7afea738256": {
+          "type": "text",
+          "settings": {
+            "upper_buttons_text": "food"
+          }
+        }
+      },
+      "block_order": [
+        "9ecb686b-b644-4c6b-b591-249126a852aa",
+        "1ef7de04-bb3f-41c5-a9c5-a71eaae8ca43",
+        "246f5f69-ade0-46a8-8137-44e39dd7997d",
+        "d98121a8-5feb-4288-867b-22c207468962",
+        "59257ee5-0f25-4ace-81e9-8b24e3f67567",
+        "21edc227-bf35-40eb-a55c-c7afea738256"
+      ],
+      "settings": {
+        "new_products": "new-products",
+        "span": "new products",
+        "h1": "new products",
+        "view_all_link": "shopify:\/\/collections\/new-products",
+        "view_all_text": "view all"
+      }
+    },
+    "502930a8-3954-47b0-b284-eceda0f01a56": {
+      "type": "gift-hampers-section",
+      "settings": {
+        "gift-img": "shopify:\/\/shop_images\/Group_83_af2cf02d-b433-4ee8-b2fb-49214d599a49.png"
+      }
+    },
+    "597df01f-1085-4063-abda-12ea6e1c171a": {
+      "type": "video",
+      "settings": {
+        "heading": "amala's watch",
+        "text_span": "amala's watch",
+        "text_h1": "amala's watch",
+        "heading_size": "h2",
+        "cover_image": "shopify:\/\/shop_images\/Group_75_e92190fe-c931-4a62-b985-27803726d665.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "97cd87d0-9d53-4d29-bd56-6b7a42a74924": {
+      "type": "blogs-section",
+      "settings": {
+        "text_span": "our blog's",
+        "text_h1": "our blog's",
+        "blog": "harsh-blogs"
+      }
+    },
+    "9e9dbd88-a4c2-459a-aac2-5b00fb18935b": {
+      "type": "review-section",
+      "blocks": {
+        "914540eb-18d8-4114-8ce0-ab776e4f42e3": {
+          "type": "slide",
+          "settings": {
+            "review-text-h1": "''",
+            "review-text-p": "Great Product Great product for those who want to make their hand look elegant ❤️ must buy",
+            "viewer-img": "shopify:\/\/shop_images\/image_78_90d00f0f-d175-4137-8e0f-91c611f75552.png",
+            "viewer-text": "Ishwarya R."
+          }
+        },
+        "f01be1b1-adc1-42e9-8dfa-58bff94870fa": {
+          "type": "slide",
+          "settings": {
+            "review-text-h1": "''",
+            "review-text-p": "Great Product Great product for those who want to make their hand look elegant ❤️ must buy",
+            "viewer-img": "shopify:\/\/shop_images\/image_81_2a6717a6-cc9f-4aef-9f11-25772428272a.png",
+            "viewer-text": "Ishwarya R."
+          }
+        },
+        "19974625-f3f2-4679-b941-1a93e04a1069": {
+          "type": "slide",
+          "settings": {
+            "review-text-h1": "''",
+            "review-text-p": "Great Product Great product for those who want to make their hand look elegant ❤️ must buy",
+            "viewer-img": "shopify:\/\/shop_images\/image_79_738906ba-0505-4fba-ad33-9039f94c8c8a.png",
+            "viewer-text": "Ishwarya R."
+          }
+        },
+        "7025981a-1cb5-4abf-9449-465bf6805f9b": {
+          "type": "slide",
+          "settings": {
+            "review-text-h1": "''",
+            "review-text-p": "Great Product Great product for those who want to make their hand look elegant ❤️ must buy",
+            "viewer-img": "shopify:\/\/shop_images\/image_80_3c121666-8a18-4e79-b21a-3a70673c1d61.png",
+            "viewer-text": "Ishwarya R."
+          }
+        }
+      },
+      "block_order": [
+        "914540eb-18d8-4114-8ce0-ab776e4f42e3",
+        "f01be1b1-adc1-42e9-8dfa-58bff94870fa",
+        "19974625-f3f2-4679-b941-1a93e04a1069",
+        "7025981a-1cb5-4abf-9449-465bf6805f9b"
+      ],
+      "settings": {
+        "text_span": "review's",
+        "text_h1": "review's",
+        "view_all_link": "#",
+        "view_all_text": "view all"
+      }
+    },
+    "b912eaf9-33d4-43aa-b2fb-2e2316a6dbba": {
+      "type": "explore-more-section",
+      "blocks": {
+        "7444eff1-ac96-4bbd-99f5-d63f5398ff1d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_62_ccfb8a63-4596-488c-910e-62369425eec0.png"
+          }
+        },
+        "aeba4c4f-765e-4707-b8c4-5f3bda2c2b18": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_61.png"
+          }
+        },
+        "c37ef67d-98e5-483c-80f5-d4d03499dc2f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_60_de807145-4148-4f7e-b398-010eef63a7f9.png"
+          }
+        },
+        "45d69c23-3e1c-4b99-98fb-dfa64bb16dee": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_63_dba8fdd5-24b5-45ba-b251-97556b6bfea9.png"
+          }
+        },
+        "9ad761b0-e112-4f81-87e5-d6bd624473f2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_64_2938c1b1-8304-4a91-8179-0caeb78315b6.png"
+          }
+        },
+        "48201ed9-6d62-4a7d-bf68-00dc79008f7a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_88_0d67494a-e7b2-4629-9d2e-1e896fc397ed.png"
+          }
+        }
+      },
+      "block_order": [
+        "7444eff1-ac96-4bbd-99f5-d63f5398ff1d",
+        "aeba4c4f-765e-4707-b8c4-5f3bda2c2b18",
+        "c37ef67d-98e5-483c-80f5-d4d03499dc2f",
+        "45d69c23-3e1c-4b99-98fb-dfa64bb16dee",
+        "9ad761b0-e112-4f81-87e5-d6bd624473f2",
+        "48201ed9-6d62-4a7d-bf68-00dc79008f7a"
+      ],
+      "settings": {
+        "text_span": "explore more",
+        "text_h1": "explore more",
+        "view_all_link": "#",
+        "view_all_text": "view all"
+      }
+    },
+    "624d8305-d29e-4d64-8bff-ac78dce72b53": {
+      "type": "about-amala-section",
+      "blocks": {
+        "8455b8e8-013e-4394-888d-1fe3cac264c3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_53_c50a14fe-481b-4297-a40a-de8330f4ef86.png"
+          }
+        },
+        "b6066da2-0bf2-4b75-b8d2-4b6f45b82b4f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_51_d55ba753-ac16-46b1-b7dc-415f426945aa.png"
+          }
+        },
+        "7352a113-472d-4b7b-ab24-472a260c5f92": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_50_a7e5abf3-d70f-473c-93ec-81f3b066095f.png"
+          }
+        },
+        "fcc33caf-cef9-4d4d-bb22-f305f9bfb44e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_52_9665fda6-56fd-47ca-a412-08adce90a6db.png"
+          }
+        },
+        "dd4754fb-522d-44be-9699-e145029723d9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_54_bde8acb9-4478-47b0-b612-5dfbc851ecbc.png"
+          }
+        },
+        "80823fdb-b085-48b2-8e6b-2484e9677b2d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_56_ca51d0df-5891-4790-8779-f6af5a8d958c.png"
+          }
+        }
+      },
+      "block_order": [
+        "8455b8e8-013e-4394-888d-1fe3cac264c3",
+        "b6066da2-0bf2-4b75-b8d2-4b6f45b82b4f",
+        "7352a113-472d-4b7b-ab24-472a260c5f92",
+        "fcc33caf-cef9-4d4d-bb22-f305f9bfb44e",
+        "dd4754fb-522d-44be-9699-e145029723d9",
+        "80823fdb-b085-48b2-8e6b-2484e9677b2d"
+      ],
+      "settings": {
+        "aboutAmala-p": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "text_span": "about @amalaearth",
+        "text_h1": "about @amalaearth",
+        "view_all_link": "#",
+        "view_all_text": "read more"
+      }
+    },
+    "d5fa1df1-9d41-4957-a9ea-4b01ad1a3eb8": {
+      "type": "conscious-part-section",
+      "settings": {
+        "h1": "A way to Conscious Living"
+      }
+    }
+  },
+  "order": [
+    "rich_text",
+    "featured_collection",
+    "multicolumn",
+    "93b228da-842f-48ea-b4c8-18654de37883",
+    "fd30f39a-a716-4260-bdc1-34eb51551039",
+    "d646841e-d261-4f61-b2ad-7d6afb1fb81e",
+    "8845f2fc-0cf3-4648-b77c-d33a1cbbfe5f",
+    "97a8f6a3-f11e-4b46-bfd7-240270c190f0",
+    "493e985f-6da8-4f45-8ffb-b1b4ea228935",
+    "6d4ffa46-4892-406a-b0fd-c28c83ad2905",
+    "069bb4a4-c955-4c2e-8fab-7399a0c469d4",
+    "9e4cc4bb-8e72-4026-bcfa-bc2ed6d25678",
+    "6b0012f0-377c-480b-aa3f-b66a13ec07b1",
+    "a6c9e0b7-a175-4c98-a0c1-b47a846981e1",
+    "e472ff8f-2ee1-4fe1-9079-4b60fdd821e3",
+    "502930a8-3954-47b0-b284-eceda0f01a56",
+    "597df01f-1085-4063-abda-12ea6e1c171a",
+    "97cd87d0-9d53-4d29-bd56-6b7a42a74924",
+    "9e9dbd88-a4c2-459a-aac2-5b00fb18935b",
+    "b912eaf9-33d4-43aa-b2fb-2e2316a6dbba",
+    "624d8305-d29e-4d64-8bff-ac78dce72b53",
+    "d5fa1df1-9d41-4957-a9ea-4b01ad1a3eb8"
+  ]
+}

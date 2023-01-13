@@ -1,0 +1,35 @@
+{{ 'recommendation-section.css' | asset_url | stylesheet_tag }}
+
+    <section class="recommendation">
+      
+      <div class="container-fluid m-0 p-0 gift-hampers-img ">
+        <div><img src="{{ section.settings.recommendation_img |img_url:''}}" alt=""></div>
+       
+     </div>
+
+    </section>
+
+{% schema %}
+  {
+    "name": "recommendation",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"recommendation_img",
+        "label":"pick your image"
+      }
+    ],
+    "presets":[
+      {
+        "name":"recommendation",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,78 @@
+{{ 'shop-by-tags-section.css' | asset_url | stylesheet_tag }}
+
+
+<script src="{{ 'shop-by-tags-section.js' | asset_url }}" defer="defer"></script>
+
+    <section class="shopByTags ">
+      <div class="container py-5 shopByTags-after">
+        <div class="categories-text">
+          <span > {{ section.settings.text_span }}</span>
+          <h1 class="text-opacity"> {{ section.settings.text_h1  }}</h1>
+        </div>
+        <div class="tags-img px-5 ms-5 pb-5">
+          <div class="d-flex flex-wrap justify-content-between gx-0 pt-5 tags-img-row-1">
+            <div class=" tags-img-1 "><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Layer_2.svg?v=1669613764" alt="tag"></div>
+            <div class=" tags-img-1"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Frame_9.svg?v=1669613841" alt="tag"></div>
+            <div class=" tags-img-1 "><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Frame_1.svg?v=1669613946" alt="tag"></div>
+            <div class=" tags-img-1"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Frame_8.svg?v=1669613959" alt="tag"></div>
+            <div class=" tags-img-1"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Group_18.svg?v=1669613972" alt="tag"></div>    
+            <div class=" tags-img-1 mt-md-5 "><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Group_19.svg?v=1669613985" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5 "><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Frame_3.svg?v=1669614005" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Frame_7.svg?v=1669614029" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Frame_5.svg?v=1669614038" alt="tag"></div>
+            <div class=" tags-img-1 mt-md-5 "><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Group_62.svg?v=1669614051" alt="tag"></div>
+          </div>
+        </div>
+        <div class="bttn">
+          <a href="{{ section.settings.view_all_link }}"> <button>{{ section.settings.view_all_text }}</button></a>
+         
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "shopByTags",
+    "settings": [
+      {
+        "type":"text",
+        "id":"text_span",
+        "label":"behind_text"
+      },
+      {
+        "type":"text",
+        "id":"text_h1",
+        "label":"above_text"
+      },
+      {
+        "type":"url",
+        "id":"view_all_link",
+        "label":"link here your collection"
+      },
+      {
+        "type":"text",
+        "id":"view_all_text",
+        "label":"view all"
+        
+      }
+      
+    ],
+    "presets":[
+       {
+        "name":"shopByTags",
+        "category":"text"
+      }
+    
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

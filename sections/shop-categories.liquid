@@ -1,0 +1,68 @@
+{{ 'shop-categories.css' | asset_url | stylesheet_tag }}
+
+
+<script src="{{ 'shop-categories.js' | asset_url }}" defer="defer"></script>
+
+
+    <section class="categories d-md-block d-none">
+      <div class="container mt-5">
+        <div class="categories-text ">
+          <span >Shop By Categroies 
+          </span>
+          <h1 class="text-opacity">Shop By Categroies</h1>
+              </div>
+        <div class="categories-slider mt-5">
+         {% for product in collections[section.settings.shop_by_categories].products %}
+          <div class="category-1 pt-5">
+     {% comment %}     <div class="Test category-1-image pt-5" style="background-image:url({{ block.settings.cat_bimg |img_url:'master'}})">{% endcomment %}
+      
+            <div class="img-1">
+                <a href="{{ product.url }}">
+              <img src="{{ product.featured_image |img_url:'master'}}"></a>
+            </div>
+            <div class="category-1-text">
+               <h6 class="m-0 p-0"> <a href="{{ product.url }}">  {{  product.title}} </a></h6>
+              <h5>Starting from{{ product.price | money_without_trailing_zeros }}</h5>
+            </div> 
+          
+          </div>
+            {% endfor %}
+          </div>
+            
+          
+          
+         
+
+          
+         
+        </div>
+      </div>
+    </section>
+
+
+
+{% schema %}
+  {
+    "name": "shop-categories",
+    "settings": [
+     {
+       "type":"collection",
+       "id":"shop_by_categories",
+       "label":"shop by categories collection"
+     }
+    ],
+      
+    "presets":[
+      {
+        "name":"shop-categories",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

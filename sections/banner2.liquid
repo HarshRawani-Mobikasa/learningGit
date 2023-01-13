@@ -1,0 +1,64 @@
+          <section id="banner">
+            <div class="container-fluid">
+              {% for block in section.blocks %}
+              <div class="bannercopy">
+                <img src={{ block.settings.banner2_img | img_url:'medium' }}">
+                <div class="bannerText">
+                  <div class="recommondation"><p>Amala Recommondation</p></div>
+                  <div class="headingText"><p>{{ block.settings.heading }} <span>&amp; {{ block.settings.heading2 }}</span></p>
+                  <button>shop now</button>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+              </div>
+            </section>
+
+{% schema %}
+  {
+      "name": "Banner Two Section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+          {
+            "type": "image_picker",
+            "id": "banner2_img",
+            "label": "Banner Two Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Banner Two Heading1"
+          },
+
+              {
+            "type": "text",
+            "id": "heading2",
+            "label": "Banner Two Heading2"
+          }
+     
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Banner Two Section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

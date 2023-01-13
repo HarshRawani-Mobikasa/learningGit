@@ -1,0 +1,54 @@
+
+<section id="Amala-Watch">
+        <div class="container">
+          <div class="section-title">
+            <h2>Amala's Watch</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 d-flex flex-column justify-content-center pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+              <div class="video">
+                {% for block in section.blocks %}
+                <img src="{{ block.settings.video_img | img_url:'large' }}" />
+                {% endfor %}
+                <div class="play-btn"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/play-btn.png?v=1666955792"></div>
+              </div>
+          </div> </div> </div>
+          </section>
+          
+{% schema %}
+  {
+      "name": "Amala Video Section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+          {
+            "type": "image_picker",
+            "id": "video_img",
+            "label": "Video Image"
+          } 
+              
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Amala Video Section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

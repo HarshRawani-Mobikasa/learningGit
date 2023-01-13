@@ -1,0 +1,96 @@
+<style>
+  .test {
+    width: 100%;
+  }
+  .container {
+    max-width: 1580px;
+  }
+  .img {
+    width: 50%;
+  }
+  .img img {
+    width: 100%;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+</style>
+
+<div class="container d-flex">
+  <div class="img"><img src="{{ section.settings.Image-flex | img_url :'master'}}" alt="flower"></div>
+  <div class="text">{{ section.settings.title1 }}</div>
+</div>
+{%- comment -%}
+  <nav class="navbar">
+  <div class="container d-flex justify-content-between">
+  <div class="logo">
+  <img src="./../../wedding template/images/img-2.jpg" alt="girl">
+  </div>
+  <ul class="list d-flex justify-content-between">
+  <li> <a href="#">home</a></li>
+  <li> <a href="#">service</a></li>
+  <li> <a href="#">about</a></li>
+  <li> <a href="#">contact us</a></li>
+  <li> <a href="#">terms & conditon</a></li>
+  <li> <a href="#">collection</a></li>
+  </ul>
+  </div>
+  </nav>
+{%- endcomment -%}
+<section>
+  <div class="container">
+    <h1>{{section.settings.new_section}}</h1>
+    <p>{{section.settings.description}}</p>
+    <a href="{{section.settings.button_link}}">{{section.settings.button}}</a>
+  </div>
+</section>
+
+<h1>
+  {{section.settings.title}}
+</h1>
+
+{% for block in section.blocks %}
+
+  <span>{{block.settings.text12}}</span>
+  {{block.settings.text13}}
+  <h1 style="text-align:{{ block.settings.radio_c }} ;">{{ block.settings.image }}</h1>
+  {% if block.settings.image1 != null %}
+    <img src="{{ block.settings.image1 | img_url: 'medium' }}" alt="mg1" class="test">
+
+  {% endif %}
+  {% if block.settings.new_section != null %}
+    <h1>{{block.settings.new_section}}</h1>
+
+  {% endif %}
+{% endfor %}
+
+
+{% schema %}
+  {
+    "name": "Slideshow",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Slideshow",
+        "default": "This is default"
+      }, {
+        "type": "image_picker",
+        "id": "Image-flex",
+        "label": "Image"
+
+      }, {
+        "type": "textarea",
+        "id": "title1",
+        "label": "blog text",
+        "default": "This is default"
+      }
+    ]
+
+
+
+  }
+{% endschema %}

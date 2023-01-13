@@ -1,0 +1,124 @@
+<section id="portfolio">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>New Products</h2>
+          </div>
+
+        <ul id="portfolio-flters1" class="d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app" class="">Fashion</li>
+          <li data-filter=".filter-card" class="">Skin</li>
+          <li data-filter=".filter-web" class="">Home</li>
+          <li data-filter=".filter-card">Beauty</li>
+          <li data-filter=".filter-app">Food</li>
+          
+        </ul>
+       <div class="row portfolio-container1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 375px;">
+        <div class="col-lg-12 col-md-4 col-6 d-flex align-items-center justify-content-center" style="width:100%">
+          <div class="new-product-items">
+           <div class="item hoverwrap filter-app" style="position: absolute; left: 0px; top: 0px;">
+             <img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/np1.png?v=1666944482">
+             <p>Metallic Nail Paint | Vegan |
+               Pink Champagne | 10 ml</p>
+               <span>₹382</span>
+               <div class="overlay-sec hovercap">
+                  <div class="icon-text">
+                    <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/ShoppingCartSimple.png?v=1666944484"> Add to Cart</span>
+                    <span class="vertical-line"></span>
+                    <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Eye.png?v=1666944482"> &nbsp;Quick View</span>
+                </div>
+               </div>
+               <div class="wishlist"><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Heart.png?v=1666944482"></div>
+           </div>
+           <div class="item hoverwrap filter-card" style="position: absolute; left: 264px; top: 0px;">
+             <img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/np2.png?v=1666944482">
+             <p>Cotton Silk Blouse | Teal Green</p>
+               <span>₹382</span>
+               <div class="overlay-sec hovercap">
+                <div class="icon-text">
+                <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/ShoppingCartSimple.png?v=1666944484"> Add to Cart</span>
+                <span class="vertical-line"></span>
+                <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Eye.png?v=1666944482"> &nbsp;Quick View</span>
+              </div>
+               </div>
+           </div>
+           <div class="item hoverwrap filter-web" style="position: absolute; left: 528px; top: 0px;">
+             <img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/np3.png?v=1666944482">
+             <p>Cotton Silk Saree | Teal Green</p>
+             <span>₹382</span>
+             <div class="overlay-sec hovercap">
+              <div class="icon-text">
+              <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/ShoppingCartSimple.png?v=1666944484"> Add to Cart</span>
+              <span class="vertical-line"></span>
+              <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Eye.png?v=1666944482"> &nbsp;Quick View</span>
+            </div>
+             </div>
+           </div>
+           <div class="item hoverwrap filter-web" style="position: absolute; left: 792px; top: 0px;">
+             <img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/np4.png?v=1666944482">
+             <p>Cotton Silk Saree | Purple</p>
+               <span>₹382</span>
+               <div class="overlay-sec hovercap">
+                <div class="icon-text">
+                <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/ShoppingCartSimple.png?v=1666944484"> Add to Cart</span>
+                <span class="vertical-line"></span>
+                <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Eye.png?v=1666944482"> &nbsp;Quick View</span>
+              </div>
+               </div>
+           </div>
+           <div class="item  hoverwrap filter-app" style="position: absolute; left: 1056px; top: 0px;">
+             <img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/np5.png?v=1666944482">
+             <p>Cotton Silk Saree | Beige</p>
+               <span>₹382</span>
+               <div class="overlay-sec hovercap">
+                <div class="icon-text">
+                <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/ShoppingCartSimple.png?v=1666944484"> Add to Cart</span>
+                <span class="vertical-line"></span>
+                <span><img src="https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Eye.png?v=1666944482"> &nbsp;Quick View</span>
+              </div>
+               </div>
+           </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="viewAllBtn">
+      <button>view all</button>
+    </div>
+      
+      </div>
+    </section>
+
+{% schema %}
+   {
+      "name": "Portfolio Section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Portfolio Section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+  
+{% endjavascript %}

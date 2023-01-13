@@ -1,0 +1,18 @@
+.timer{
+    background-color: #9C4A2F;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:white;
+}
+
+.text span{
+    background-color: white;
+    color: #3C3C3C;
+    padding: 5px 8px;
+    border-radius: 10px;
+}

@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "35782e5a-d6c3-4b58-a99d-411d48ad5bc4": {
+          "type": "image",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Rectangle_51_d55ba753-ac16-46b1-b7dc-415f426945aa.png",
+            "title": "new article",
+            "url": "shopify:\/\/blogs\/harsh-blogs\/everything-about-kalonji-oil-13-amazing-benefits-and-how-to-use-it"
+          }
+        },
+        "4fd2fcf8-cec1-4bbe-bac9-cd89cc81dd3d": {
+          "type": "text",
+          "settings": {
+            "title2": "this article",
+            "description": "<p><strong>Lorem Ipsum<\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "35782e5a-d6c3-4b58-a99d-411d48ad5bc4",
+        "4fd2fcf8-cec1-4bbe-bac9-cd89cc81dd3d"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

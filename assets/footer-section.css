@@ -1,0 +1,122 @@
+.list-section{
+  margin-left:20px;
+}
+
+
+
+.footer-list a{
+  color:black;
+  text-transform:capitalize;
+  text-decoration:none;
+}
+.image-part{
+    margin-right:10%;
+}
+.footer-list-image{
+  padding: 6% 13% ;
+}
+.footer-part{
+  background-color:#F8F4F0;
+}
+
+        .footer-part{
+            position: relative;
+        }
+        .footer-part::before{
+            content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Group_3.svg?v=1670228998');
+            position: absolute;
+            top: 14%;
+            left: 0%;
+        }
+        .footer-part::after{
+            content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Group_1_5ac1b783-cb83-4376-a24e-f5a5dc0a96a7.svg?v=1670229021');
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+        }
+
+
+ 
+.form-footers input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    position:static;
+    opacity:1;
+    z-index:1;
+      
+}
+.form-footers{
+    position: relative;
+}
+ .form-footers .icon{
+    position: absolute;
+    top: 60%;
+    right: 7%;
+    border-radius: 50%;
+    color: #B39D81;
+    opacity: 0.92;
+}
+
+
+
+        .image-part h5{
+            font-family: 'Garamond Premier Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;            
+            text-transform: capitalize;
+            color: #3C3C3C;
+        }
+        .image-part p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #3C3C3C;
+        }
+
+
+        .list-section h5{
+            font-family: 'Garamond Premier Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #3C3C3C;
+            text-transform:capitalize;
+        }
+
+        .list-section ul .footer-list{
+            list-style: none;
+
+
+        }
+
+        .list-section ul .footer-list a{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 31px;
+            color: #3C3C3C;
+
+        }
+
+
+
+        .footer-bottom{     
+            border-top: 1px solid #000000;
+        }
+        .footer-bottom-text h6{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #3C3C3C;
+        }

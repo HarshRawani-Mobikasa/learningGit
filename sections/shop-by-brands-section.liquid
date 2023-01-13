@@ -1,0 +1,105 @@
+{{ 'shop-by-brands-section.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'shop-by-brands-section.js' | asset_url }}" defer="defer"></script>
+
+    <section class="shopByBrands">
+      <div class="container pt-5 pb-5">
+             <div class="categories-text">
+          <span >{{ section.settings.text_h1 }}
+          </span>
+          <h1 class="text-opacity">{{ section.settings.text_span  }}</h1>
+              </div>
+
+
+
+        <div class="shopByBrands-img row mt-5 pb-5">
+          <div class="sbb-img-1 sbb-img col ms-3">
+            <img src="{{ section.settings.img-11 | img_url:'master'}} " alt="" class="img-fluid">
+          </div>
+          <div class="sbb-img-2 sbb-img col ms-3">
+            <img src="{{ section.settings.img-22 | img_url:'master'}}" alt="" class="img-fluid">
+          </div>
+          <div class="sbb-img-3 sbb-img col ms-3">
+            <img src="{{ section.settings.img-33 | img_url:'master'}}" alt="" class="img-fluid">
+          </div>
+          <div class="sbb-img-4 sbb-img col ms-3">
+            <img src="{{ section.settings.img-44 | img_url:'master'}}" alt="" class="img-fluid">
+          </div>
+          <div class="sbb-img-5 sbb-img col ms-3">
+            <img src="{{ section.settings.img-55 | img_url:'master'}}" alt="" class="img-fluid">
+          </div>
+          
+        </div>
+        <div class="bttn mt-5">
+        <a href="{{ section.settings.view_all_link }}" ><button>{{ section.settings.view_all_text }}</button></a>
+        </div>
+      </div>
+    </section>
+
+
+
+{% schema %}
+  {
+    "name": "shop by brands",
+    "settings": [
+           {
+        "type":"text",
+        "id":"text_span",
+        "label":"behind_text"
+      },
+      {
+        "type":"text",
+        "id":"text_h1",
+        "label":"above_text"
+      },
+      {
+        "type":"image_picker",
+        "id":"img-11",
+        "label":"pick your image"
+      },
+      {
+        "type":"image_picker",
+        "id":"img-22",
+        "label":"pick your image"
+      },
+      {
+        "type":"image_picker",
+        "id":"img-33",
+        "label":"pick your image"
+      },
+      {
+        "type":"image_picker",
+        "id":"img-44",
+        "label":"pick your image"
+      },
+      {
+        "type":"image_picker",
+        "id":"img-55",
+        "label":"pick your image"
+      },
+      {
+        "type":"url",
+        "id":"view_all_link",
+        "label":"link here your collection"
+      },
+      {
+        "type":"text",
+        "id":"view_all_text",
+        "label":"view all"
+        
+      }
+    ],
+    "presets":[
+      {
+        "name":"shop by brands",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

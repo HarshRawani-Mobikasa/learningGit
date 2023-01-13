@@ -1,0 +1,86 @@
+{{ 'about-amala-section.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'aboout-amala-section.js' | asset_url}}" defer="defer"></script>
+
+   <section class="exploreMore">
+      <div class="container">
+      <div class="categories-text mt-5 mb-5">
+        <span >{{ section.settings.text_span }}
+        </span>
+        <h1 class="text-opacity"> {{ section.settings.text_h1  }}</h1>
+            </div>
+      <div class="aboutAmala-img row" >
+     {% for block in section.blocks %}
+          <div class=" col me-2"><img src="{{ block.settings.image | img_url:'master' }}" alt="" class="img-fluid"></div>
+          {% endfor %}
+
+      </div>
+      <div class="aboutAmala-p  mt-3">
+        <p>     {{ section.settings.aboutAmala-p }}   </p>
+      </div>
+      <div class="bttn mt-5 pb-5">
+    <a href="{{ section.settings.view_all_link }}" ><button>{{ section.settings.view_all_text }}</button></a>
+      </div>
+      </div>
+
+   </section>
+
+{% schema %}
+  {
+    "name": "about amala",
+    "settings": [
+       {
+        "type":"textarea",
+        "id":"aboutAmala-p",
+        "label":"paragraph"
+      },
+      {
+        "type":"text",
+        "id":"text_span",
+        "label":"behind_text"
+      },
+      {
+        "type":"text",
+        "id":"text_h1",
+        "label":"above_text"
+      },
+      {
+        "type":"url",
+        "id":"view_all_link",
+        "label":"link here your collection"
+      },
+      {
+        "type":"text",
+        "id":"view_all_text",
+        "label":"view all"
+        
+      }
+    ],
+    "blocks":[
+      {
+        "name":"about amala",
+        "type":"slide",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"pick your image"
+            
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"about amala",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

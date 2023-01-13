@@ -1,0 +1,89 @@
+ {% if cart.item_count > 0 %}
+<section>
+  <div class="container">
+    <div class="row" data-aos="zoom-in">
+      <h2>Custom Cart Page</h2>
+        <div class="col-lg-8 col-md-4 col-6 d-flex left-part">
+          <form action="/cart" method="post" novalidate>
+            
+              <table>
+                <thead>
+                  <th colspan="2">Product</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                </thead>
+                <tbody>
+                  {% for item in cart.items %}
+                    <tr>
+                      <td >
+                        <a href="{{ item.url | within: collections.all}}">
+                        <img src="{{item | img_url: "small"}}" alt="{{item.title | escape}}">
+                        </a>
+                      </td>
+                      <td valign="top">
+                        <a href="{{ item.url }}">{{item.product.title}}</a><br/>
+                        <span>
+                        {{item.variant.title}}</span>
+                        <h4><a href="/cart/change?line={{forloop.index}}&amp;quantity=0">Remove</a>   </h4>                     
+                      </td>
+                      <td  valign="top">{{ item.price | money}}</td>
+                      <td  valign="top"><input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" /></td>
+                      <td  valign="top">
+                        {% if item.orginal_line_price != item.line_price %}{{ item.orginal_line_price | money }}{% endif %}
+                          {{ item.line_price | money }}
+                          {% for discount in item.discounts %}{{ discount.title }}{% endfor %}
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+
+              
+            </div>
+         
+        <div class="col-lg-4 col-md-4 col-6 d-flex right-part">
+          <p>Subtotal: {{ cart.total_price | money }}</p>
+          <button type="submit"   name="update">Update</button>
+          <button type="submit" name="checkout">Checkout</button>
+        </div>
+      </form>
+      {%  else %}
+      <h2>Cart is Empty</h2>
+      {% endif %}
+      </div>
+      
+    </div>
+  </section>
+  <style>
+    .left-part{border:1px solid #eaeaea; box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);}
+    .left-part table tr td{ padding-left:2px; text-align:left}
+    .left-part span{font-size:12px}
+    .left-part h4 a{background: #838383;
+    font-size: 10px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    top: 7px;
+  }
+  .left-part input {  width: 45px;
+  text-align: center;
+  padding-left: 12px;
+  font-weight: bold;
+  /* font-size: 14px; */
+}
+.right-part{flex-direction:column; align-items: center;}
+.right-part button{
+  width: 335px;
+  background: #294156;
+  color: #fff;
+  border: none;
+  height: 40px;
+  margin:5px 0 5px 0;
+  font-size:15px
+}
+.right-part p{
+font-weight:bold;
+font-size:20px}
+  </style>

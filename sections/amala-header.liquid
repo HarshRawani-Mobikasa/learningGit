@@ -1,0 +1,37 @@
+{{ 'amala-header.css' | asset_url | stylesheet_tag }}
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+ <script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+
+<div class="amala-header">
+  <div class="container">
+<div class="logo">
+    <img src="{{ section.settings.logo | img_url:'master'  }}">
+</div>
+  </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "amala-header",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"logo",
+        "label":"select your logo"
+        
+      }
+    ],
+    "presets":[
+      {
+        "name":"amala-header",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

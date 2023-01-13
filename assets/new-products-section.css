@@ -1,0 +1,131 @@
+.newProducts{
+    position: relative;
+}
+.newProducts::before{
+    content: url('./../images/Group2.svg');
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+
+.newProducts-text{
+    text-align: center;
+    
+  
+}
+
+
+.newProducts-text h1{
+    font-family: 'Smith Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 65px;
+    color: #9C4A2F;
+    opacity: 0.1;
+    position: relative;
+
+
+}
+.newProducts-text h1 span{
+    font-family: 'Garamond Premier Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #3C3C3C;
+}
+
+.newProducts-button button{
+    padding: 0.5% 5%;
+    border-radius: 10px;
+    border:1px solid #B39D81;
+    background-color: transparent;
+    margin-right: 10px;
+
+}
+.newProducts-button button:hover{
+    background-color: #B39D81;
+    transition: 0.3s;
+    color: white;
+}
+.newProduct-1 img{
+    border-radius: 10px;
+}
+.newProduct-1{
+    position: relative;
+}
+.newProduct-1::after{
+    content: url('./../images/Vector.svg');
+    position: absolute;
+    top: 4%;
+    right: 10%;
+}
+
+.newProduct-1-text h6 a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #161616;
+    letter-spacing: 0.03em;
+    color:#161616
+    ;
+   
+}
+.newProduct-1-text h5{
+    color: #9C4A2F;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+.newProduct-slider .prev {
+    color: white;
+    font-size: 20px;
+    background-color: #B39D81;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: -1%;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+.newProduct-slider .next {
+    color: white;
+    font-size: 20px;
+    background-color: #B39D81;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: -0.5%;
+}
+
+@media (max-width:768px) {
+  .newProducts::before {
+            
+            z-index: -1;
+        }
+        .newProducts-button button{
+            padding: 0;
+           
+        
+        }
+}

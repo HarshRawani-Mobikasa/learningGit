@@ -1,0 +1,144 @@
+{{ 'grid-section.css' | asset_url | stylesheet_tag }}
+
+<section class="grid-section">
+      <div class="container">
+       
+          {% for block in section.blocks %}
+          <div class="d-flex row body_data">
+              <div class="col-lg-3 col-6 col-img-1">
+                <div><img src="{{ block.settings.image1 | img_url:'master' }}" alt=""></div>
+                <div class="col-img-text text-center">
+                  <span>{{ block.settings.text_span }}</span>
+                 </div>
+                 <div class="col-img-text-2 text-center">
+                  <span>{{ block.settings.text_2_span }}</span>
+                  <h5> {{ block.settings.text_2_h5 }}</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 col-img-1 ">
+               <div> <img src="{{ block.settings.image2 | img_url:'master'}}" alt=""></div>
+                <div class="col-img-text text-center">
+                  <span>{{ block.settings.text_span_2 }}</span>
+                </div>
+                <div class="col-img-text-2 text-center">
+                  <span>{{ block.settings.text_2_span_2 }}</span>
+                  <h5> {{ block.settings.text_2_h5_2 }}</h5>
+                </div>
+                
+              </div>
+              <div class="col-lg-6 col-12 col-img-1 ">
+                <div><img src="{{ block.settings.image3 | img_url:'master' }}" alt=""></div>
+                <div class="col-img-text text-center">
+                  <span>{{ block.settings.text_span_3 }}</span>
+                </div>
+                <div class="col-img-text-2 text-center">
+                  <span>{{ block.settings.text_2_span_3 }}</span>
+                  <h5> {{ block.settings.text_2_h5_3 }}</h5>
+                </div>
+               </div>
+          </div>
+              
+              
+             {% endfor %}             
+            
+
+         
+        
+           
+        
+      </div>
+
+    </section>
+
+  
+{% schema %}
+  {
+    "name": "grid section",
+    "settings": [
+   
+    ],
+    "name": "Standard Collection",
+
+"blocks": [
+			{
+				"type": "text",
+				"name": "Product",
+				"settings": [
+                  {
+                    "type":"image_picker",
+                    "id":"image1",
+                    "label":"select your first image"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_span",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_2_span",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_2_h5",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"image_picker",
+                    "id":"image2",
+                    "label":"select your second image"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_span_2",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_2_span_2",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_2_h5_2",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"image_picker",
+                    "id":"image3",
+                    "label":"select your first image"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_span_3",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_2_span_3",
+                    "label":"enter tour first title"
+                  },
+                  {
+                    "type":"text",
+                    "id":"text_2_h5_3",
+                    "label":"enter tour first title"
+                  }
+					
+				]
+			}
+		],
+    "presets":[
+      {
+        "name":"grid section",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

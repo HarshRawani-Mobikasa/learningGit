@@ -1,0 +1,114 @@
+.shopByBrands-text{
+    text-align: center;
+    
+  
+}
+
+.shopByBrands-text h1{
+    font-family: 'Smith Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 65px;
+    color: #9C4A2F;
+    opacity: 0.1;
+    position: relative;
+
+
+}
+.shopByBrands-text h1 span{
+    font-family: 'Garamond Premier Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #3C3C3C;
+}
+.shopByBrands-img .sbb-img-1{
+    position: relative;
+}
+.shopByBrands-img .sbb-img-1::after{
+
+    content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Mask_group_9.png?v=1669621477');
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+    
+
+}
+.sbb-img img{
+    border-radius: 10px;
+}   
+
+.shopByBrands-img .sbb-img-2{
+    position: relative;
+}
+.shopByBrands-img .sbb-img-2::after{
+
+    content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Mask_group_5_a3584ae4-20e9-4ae6-8214-9242537e05ba.png?v=1669621492');
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+
+} 
+
+
+
+.shopByBrands-img .sbb-img-3{
+    position: relative;
+}
+.shopByBrands-img .sbb-img-3::after{
+
+    content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Mask_group_8.png?v=1669621506');
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+    
+
+} 
+
+
+
+
+.shopByBrands-img .sbb-img-4{
+    position: relative;
+}
+.shopByBrands-img .sbb-img-4::after{
+
+    content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Mask_group_6_12ec2633-f5da-49d9-bbbb-2ea30cb39ce5.png?v=1669621532');
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+
+} 
+
+
+
+
+.shopByBrands-img .sbb-img-5{
+    position: relative;
+}
+.shopByBrands-img .sbb-img-5::after{
+
+    content: url('https://cdn.shopify.com/s/files/1/0619/0039/0599/files/Mask_group_7.png?v=1669621547');
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 11%);
+    
+
+} 

@@ -1,0 +1,76 @@
+<section id="notification" >
+      <div class="container-fluid">
+        <div class="row" data-aos="zoom-in">
+            <div class="col-lg-12 col-md-4 col-6 d-flex align-items-center justify-content-center notification-container">
+              <div class="notification">
+                
+                  <span><img src="assets/img/slider/Truck.png"></span>
+                  <p><span>Free Delivery</span> Across India</p>
+              </div>
+              <div class="notification">
+                  <span><img src="assets/img/slider/Swap.png"></span>
+                  <p><span>Easy </span>Replacement</p>
+              </div>
+              <div class="notification">
+                <span><img src="assets/img/slider/CreditCard.png"></span>
+                <p><span>Secure</span> Payments</p>
+            </div>
+            <div class="notification">
+              <span><img src="assets/img/slider/FaceMask.png"></span>
+              <p><span>Free Delivery</span> Across India</p>
+          </div>
+          </div>
+            </div>
+        </div>
+      </section>
+
+      
+
+{% schema %}
+  {
+      "name": "notification Section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+          {
+            "type": "image_picker",
+            "id": "ship_img",
+            "label": "Ship Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Shiping heading"
+          },
+
+              {
+            "type": "text",
+            "id": "heading2",
+            "label": "Shiping span"
+          }
+     
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Shiping section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

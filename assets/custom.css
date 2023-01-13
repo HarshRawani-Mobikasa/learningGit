@@ -1,0 +1,18 @@
+.header{
+  background-color:#B39D81;
+  max-width:100%;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:0px;
+  
+}
+.header-wrapper--border-bottom {
+  border:none;
+}
+.header__menu-item span{
+    font-size:16px;
+    color:black;
+}
+.header__menu-item .icon-caret{
+  color:white;
+}

@@ -1,0 +1,60 @@
+<section id="shop-by-tag">
+            <div class="container-fluid">
+              <div class="section-title">
+                <h2>Shop By Tags</h2>
+              </div>
+               
+                <ul>
+                  {% for block in section.blocks %}
+                  <li><img src="{{ block.settings.sbt_img | img_url:'medium' }}"><span>{{ block.settings.heading }}</span></li>
+                   {% endfor %}
+                </ul>
+                <div class="viewAllBtn">
+                  <button>view all</button>
+                </div>
+               </div>
+          </section>
+
+
+{% schema %}
+  {
+      "name": "Shop by Tag Section",
+      
+      "blocks": [
+        {
+          "type": "text",
+          "name": "slide",
+          "settings": [
+          {
+            "type": "image_picker",
+            "id": "sbt_img",
+            "label": "Shop by Tag Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Shop By Tag Title"
+          } 
+     
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Shop by Tag Section",
+          "category": "text",
+          "blocks": [
+            {
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

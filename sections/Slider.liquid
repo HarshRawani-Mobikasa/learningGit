@@ -1,0 +1,108 @@
+{{ 'slider-section.css' | asset_url | stylesheet_tag }}
+
+
+
+
+<section class="slider">
+  
+  <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+
+      <div class="carousel-inner">
+    {% for block in section.blocks -%}
+   
+    
+            <div class="carousel-item active">
+          <div class="sliderText ">
+            <img src="{{ block.settings.slider-img  |  img_url:'master' }}" class="slider-image">
+              <div class="carousel-caption ">
+              <h5 class="slider-caption ">{{ block.settings.slider-text-h5 }}</h5>
+              <h5 class="slider-caption2 ">{{ block.settings.slider-text-h5-2 }}</h5>
+              <p>{{ block.settings.slider-text-p }}</p>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+
+    
+
+      
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+     
+      </div>
+    
+    </section>
+
+
+
+{% schema %}
+  {
+    "name": "Slider",
+    "settings": [
+ 
+      
+    ],
+
+    	"blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+        {
+        "type":"text",
+        "id":"slider-text-h5",
+        "label":"slider text"
+      },
+      {
+        "type":"text",
+        "id":"slider-text-h5-2",
+        "label":"slider text"
+      },
+      {
+        "type":"text",
+        "id":"slider-text-p",
+        "label":"slider text"
+      },
+      {
+        "type":"image_picker",
+        "id":"slider-img",
+        "label":"choose your slider image"
+      }
+       ]
+     }
+   ],
+    "presets":[
+      {
+        "name":"Slider",
+        "category":"text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

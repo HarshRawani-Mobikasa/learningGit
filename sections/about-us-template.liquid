@@ -1,0 +1,187 @@
+{% comment %}
+<section>
+  
+  <div class="container">
+  <div class="row">
+           <div class="col-lg-12 d-flex flex-column justify-content-center pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <div class="sec-title" style="padding: 40px 0; text-align:center">
+             <h1> {{page.title}} </h1>
+            </div>
+            <div class="row1">
+              <div class="col1">
+                <div class="tabs">
+                  {% for block in section.blocks %}
+                  <div class="tab">
+                    <input type="checkbox" id="{{block.settings.page-anchor-link}}">
+                    <label class="tab-label" for="{{block.settings.page-anchor-link}}">{{ block.settings.heading2 }}</label>
+                    <div class="tab-content">
+                      {{ block.settings.heading }}
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div> 
+              </div>
+        </div>
+      
+      
+    </div>
+   
+</div>      
+
+</section>
+
+
+   
+  
+
+  {% stylesheet %}
+  <style>
+     h1{
+    font-size:30px;
+    padding:35px 0 35px 0;
+  }
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    .row1 {
+      display: flex;
+      margin-top:35px    }
+    .row1 .col1 {
+      flex: 1;
+    }
+    .row1 .col:last-child {
+      margin-left: 1em;
+    }
+    /* Accordion styles */
+    .tabs {
+      border-radius: 8px;
+      overflow: hidden;
+      
+    }
+    .tab {
+      width: 100%;
+      color: white;
+      overflow: hidden;
+    }
+    .tab-label {
+      display: flex;
+      justify-content: space-between;
+      background: transparent;
+      font-weight: bold;
+      cursor: pointer;
+      border-bottom: 3px solid #b39d81;
+      color: #b09f89;
+      padding:15px 0 15px 0;
+     /* Icon */
+    }
+    .tabs input[type='checkbox'] {
+      display:none;
+      width: auto;
+      margin-right: 0.5rem;
+  }
+    
+    .tab-label::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all 0.35s;
+    }
+    .tab-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #2c3e50;
+      background: white;
+      transition: all 0.35s;
+    }
+    .tab-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: #2c3e50;
+      cursor: pointer;
+      transition: all 0.35s;
+    }
+    .tab-close:hover {
+      background: #1a252f;
+    }
+    input:checked + .tab-label {
+      background: transparent;
+    }
+    input:checked + .tab-label::after {
+      transform: rotate(90deg);
+    }
+    input:checked ~ .tab-content {
+      max-height: 100vh;
+      padding: 1em;
+    }
+  </style>
+  {% endstylesheet %}
+  
+  {% javascript %}
+    
+  
+  {% endjavascript %}
+
+  {% endcomment %}
+
+{%- if section.settings.container == 'container' -%}
+{% assign container_class = 'container' %}
+{%- else -%}
+    {% assign container_class = 'container-fluid' %}
+    
+
+{%- endif -%}
+
+<div class="{{ container_class }}">
+
+
+    <h1>{{ page.title }}</h1>
+    {% if section.settings.show_published_date %}
+        <small>{{ page.published_at | date: '%B %d %Y' }}</small>
+        {%- comment -%} date 
+        B is for for the month
+        d is for the date
+        Y is for the year {%- endcomment -%}
+    {% endif %}
+ 
+
+    <div>{{ page.content }}</div>
+    
+
+</div>
+
+{% schema %}
+    {
+        "name":"page settings",
+        "settings":[
+            {
+                "type":"select",
+                "id":"container",
+                "label":"layout",
+                "options":[
+                    {
+                        "value":"container",
+                        "label":"Container"                    
+                    },
+                    {
+                        "value":"container-fluid",
+                        "label":"Container-fluid"
+                    }
+
+                ],
+                "default":"container"
+            },
+            {
+                "type":"checkbox",
+                "id":"show_published_date",
+                "default":true,
+                "label":"show published date"
+            }
+        ]
+    }
+{% endschema %}

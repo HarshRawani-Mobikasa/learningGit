@@ -1,0 +1,85 @@
+
+{{ 'best-seller-section.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'best-seller-section.js' | asset_url }}" defer="defer"></script>
+
+
+    <section class="bestSeller">
+      <div class="container pb-5">
+        <div class="categories-text mt-5">
+          <span > {{ section.settings.text_span }}
+          </span>
+          <h1 class="text-opacity">  {{ section.settings.text_h1  }}</h1>
+        </div>
+        
+        <div class="bestseller-slider mt-5">
+         {% for product in collections[section.settings.best_seller].products %}
+          <div class="product-1 me-2">
+          <img src="{{ product.featured_image |img_url:''}}" />
+            <div class="product-text pt-3">
+              <h6 class="m-0">
+           <a href="{{ product.url }}">  {{  product.title}} </a>
+                </h6>
+              
+             
+              <h5> {{ product.price | money_without_trailing_zeros }} <span> {{ product.compare_at_price | money_without_trailing_zeros}}</span> </h5>
+            </div>
+          </div>
+{% endfor %}
+        </div>
+        <div class="bttn">
+          <a href="{{ section.settings.view_all_link }}" ><button>{{ section.settings.view_all_text }}</button></a>
+          
+        </div>  
+      </div>
+    </section>
+
+
+
+
+{% schema %}
+  {
+    "name": "best-seller-section",
+    "settings": [
+      {
+        "type":"collection",
+        "id":"best_seller",
+        "label":"Best Seller"
+      },
+      {
+        "type":"text",
+        "id":"text_span",
+        "label":"behind_text"
+      },
+      {
+        "type":"text",
+        "id":"text_h1",
+        "label":"above_text"
+      },
+      {
+        "type":"url",
+        "id":"view_all_link",
+        "label":"link here your collection"
+      },
+      {
+        "type":"text",
+        "id":"view_all_text",
+        "label":"view all"
+        
+      }
+    ],
+    "presets":[
+      {
+        "name":"best-seller-section",
+        "category":"text"
+      }
+    
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

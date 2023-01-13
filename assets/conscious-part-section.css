@@ -1,0 +1,21 @@
+    .conscious-living{
+            background-color: #B39D81; 
+            
+        }
+        .conscious-living h1{
+            font-family: 'Garamond Premier Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 48px;
+            color: #F8F4F0;
+        }
+
+
+@media (max-width:425px) {
+    .conscious-living h1{
+        font-size: 24px;
+    }
+
+
+}
